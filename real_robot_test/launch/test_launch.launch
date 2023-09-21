@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="adc_encoder_node" pkg="rosserial_python" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/ttyUSB0"/>
+        <param name="baud" value="57600"/>
+    </node>
+
+    <node name="pwm_node" pkg="rosserial_python" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/ttyUSB1"/>
+        <param name="baud" value="57600"/>
+    </node>
+
+
+
+    <node name="odom_publisher" pkg="real_robot_test" type="odom_publisher.py" output="screen">
+    </node>
+
+    <node name="pwm_publihser" pkg="real_robot_test" type="pwm_publisher.py" output="screen">
+    </node>
+	
+
+    <node name="range_estimator" pkg="real_robot_test" type="range_estimator.py" output="screen">
+    </node>
+	
+<!--
+    <node name="main_control" pkg="real_robot_test" type="main_control.py" output="screen">
+    </node>
+-->
+
+</launch>

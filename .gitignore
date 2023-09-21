@@ -3,3 +3,5 @@ robot_test_pkg/Thesis.drawio
 robot_test_pkg/Notebooks/_ipynb
 robot_test_pkg/Notebooks/Model1
 robot_test_pkg/Notebooks/.ipynb_checkpoints/_ipynb-checkpoint
+real_robot_test/src/DQN_functions/__pycache__/mobile_control.cpython-36.pyc
+.gitignore
